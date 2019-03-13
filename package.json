@@ -1,0 +1,30 @@
+{
+  "name": "shipit-gcs",
+  "version": "0.0.1",
+  "description": "Shipit pluggin for deploying a static website to Google Cloud Storage",
+  "main": "index.js",
+  "peerDependencies": {
+    "shipit": "*",
+    "shipit-deploy": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javorosas/shipit-gcs.git"
+  },
+  "keywords": [
+    "shipit",
+    "google",
+    "cloud",
+    "storage",
+    "deploy"
+  ],
+  "author": "Javier Rosas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javorosas/shipit-gcs/issues"
+  },
+  "homepage": "https://github.com/javorosas/shipit-gcs#readme"
+}
