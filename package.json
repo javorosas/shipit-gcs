@@ -1,6 +1,6 @@
 {
   "name": "shipit-gcs",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Shipit plugin to deploy a static website to Google Cloud Storage",
   "main": "index.js",
   "peerDependencies": {

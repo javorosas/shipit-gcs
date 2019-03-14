@@ -9,7 +9,8 @@ const removeWorkspace = async (shipit) => {
 }
 
 const setUpDeploy = async shipit => {
-  shipit.blTask('gs-deploy', async () => {
+  shipit.task('gcs-deploy', ['deploy:init', 'deploy:fetch', 'gcs:update', 'deploy:finish']);
+  shipit.blTask('gcs:update', async () => {
     const source = path.resolve(shipit.workspace, shipit.config.dirToCopy);
     await shipit.local(`gsutil -m cp -r ${source}/** gs://${shipit.config.gcs.bucket}/`, { cwd: shipit.workspace });
     await removeWorkspace(shipit);
